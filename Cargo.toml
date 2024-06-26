@@ -1,0 +1,17 @@
+[workspace]
+members = ["controller", "password_state"]
+resolver = "2"
+
+[workspace.dependencies]
+futures = "0.3"
+k8s-openapi = { version = "0.22.0", features = ["latest"] }
+kube = { version = "0.92.1", features = ["derive", "runtime"] }
+reqwest = { version = "0.12", default-features = false, features = ["json"] }
+schemars = "0.8"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
+tokio = { version = "1.38", features = ["full"] }
+tracing = { version = "0.1", features = ["log"] }
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+vaultrs = "0.7.2"
