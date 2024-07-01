@@ -1,5 +1,5 @@
 [workspace]
-members = ["controller", "password_state"]
+members = ["controller", "passwordstate_api", "mock_passwordstate_api"]
 resolver = "2"
 
 [workspace.dependencies]
